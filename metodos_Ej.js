@@ -3,10 +3,11 @@ const nums =[1,2,3,4,5,6];
 const mascotas=[
     {nombre:'Orion',especie:'Perro',edad:1},
     {nombre:'Spica',especie:'Gato',edad:3},  
-    {nombre:'Antares',especie:'Huron',edad:2}      
+    {nombre:'Antares',especie:'Huron',edad:2},
+    {nombre:'Phi',especie:'Perro',edad:5}      
 ] 
 console.log(nums.filter(x=>x<4));
-console.log(mascotas.filter(x=>x.especie=='Perro'||x.especie=='Gato'));
+console.log(mascotas.filter(x=>x.especie==='Perro'||x.especie==='Gato'));
 //console.log(mascotas[2].nombre)
 //////////////////////////////////////////////////
 
@@ -14,6 +15,8 @@ console.log(mascotas.filter(x=>x.especie=='Perro'||x.especie=='Gato'));
 //======== metodo map recibe una funcion y retorna un array 
 console.log(nums.map(x=>x*2));
 console.log(mascotas.map(x=>x.edad));
+//especiesMascotas=mascotas.map(x=>x.especie)
+console.log(mascotas.map(x=>x.especie).filter(x=>x==='Perro'));
 //////////////////////////////////////////////////
 
 
